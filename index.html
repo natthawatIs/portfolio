@@ -2,8 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="🧑🏻‍💻" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natthawat Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <style>
       @font-face {
         font-family: "Night Zone";
@@ -12,170 +19,326 @@
         font-weight: normal;
         font-style: normal;
       }
+
       body {
         font-family: Arial, sans-serif;
-        line-height: 1.6;
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 20px;
 
-        background-color: #fff;
-        background-image:
-    /* ไล่จางจากขวาเข้ามา */ radial-gradient(
+        background-color: #fffefb;
+        background-image: radial-gradient(
             circle at right,
             rgba(255, 255, 255, 1) 40%,
             rgba(255, 255, 255, 0) 80%
           ),
-          /* ไล่จางตรงล่างซ้าย */
-            radial-gradient(
-              circle at bottom left,
-              rgba(255, 255, 255, 0.7) 0%,
-              rgba(255, 255, 255, 0) 60%
-            ),
-          /* ลายตาราง */
-            linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+          radial-gradient(
+            circle at bottom left,
+            rgba(255, 255, 255, 0.7) 0%,
+            rgba(255, 255, 255, 0) 60%
+          ),
+          linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
           linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
 
         background-size: 100% 100%, 100% 100%, 20px 20px, 20px 20px;
         background-repeat: no-repeat, no-repeat, repeat, repeat;
       }
-      h1,
-      h2,
-      h3 {
-        text-align: center;
-      }
-      p,
-      li {
-        font-size: 1rem;
-      }
-      hr {
-        margin: 2rem 0;
-      }
-      .center {
-        text-align: center;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      .icon-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-      }
-      .icon-grid a img {
-        width: 48px;
-        height: 48px;
-      }
     </style>
   </head>
+
   <body>
-    <h1>Natthawat Isanpayu 🧑🏻‍💻</h1>
-    <p class="center">
-      <i
-        >On a journey to become a Backend/Fullstack Developer, driven by my
-        passion for JavaScript, clean code, and modern web design.</i
-      >
-    </p>
+    <div class="max-w-3xl mx-auto px-4 py-12 space-y-5">
+      <div class="space-y-2">
+        <div class="text-2xl font-bold">Natthawat Isanpayu</div>
+        <div class="flex justify-between">
+          <div class="space-y-2">
+            <p class="text-stone-500 max-w-md text-sm text-pretty">
+              On a journey to become a Backend/Fullstack Developer, driven by my
+              passion for JavaScript, clean code, and modern web design. ✨
+            </p>
+            <p class="text-xs text-stone-500">🇹🇭 Bangkok, Thailand</p>
+            <div class="flex space-x-1 text-gray-700">
+              <a
+                href="mailto:natthawatisanpayu@gmail.com"
+                title="Email"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-gray-200 hover:text-black w-8 h-8"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://github.com/natthawatIs"
+                target="_blank"
+                title="GitHub"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-gray-200 hover:text-black w-8 h-8"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/natthawat-isanpayu-43bb5b2a2/"
+                target="_blank"
+                title="LinkedIn"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-gray-200 hover:text-black w-8 h-8"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="text-7xl mr-14">🧑🏻‍💻</div>
+        </div>
+      </div>
 
-    <hr />
+      <!-- About -->
+      <section>
+        <h2 class="text-xl font-bold mb-3">About</h2>
+        <p class="text-stone-500 text-sm">
+          I'm a developer who loves learning and exploring new tech stacks that
+          align with organizational needs — building efficient and maintainable
+          applications with modern backend and cloud technologies, following
+          best practices used in the industry.
+        </p>
+      </section>
 
-    <ul>
-      <li>
-        📫 Email:
-        <a href="mailto:natthawatisanpayu@gmail.com"
-          >natthawatisanpayu@gmail.com</a
-        >
-      </li>
-      <li>
-        💼 LinkedIn:
-        <a
-          href="https://www.linkedin.com/in/natthawat-isanpayu-43bb5b2a2/"
-          target="_blank"
-          >Natthawat Isanpayu</a
-        >
-      </li>
-    </ul>
+      <!-- Work Experience -->
+      <section>
+        <h2 class="text-xl font-bold mb-3">Work Experience</h2>
+        <div class="">
+          <div class="flex justify-between">
+            <div class="font-semibold">S.K. REALTY PLUS Co.,LTD.</div>
+            <div class="text-sm text-stone-500">Jun 2022 - Dec 2022</div>
+          </div>
+          <div class="text-sm">Backend Developer Intern</div>
+          <p class="text-stone-500 text-sm">
+            Developed RESTful APIs with NestJS and TypeScript for an e-learning
+            platform. Managed databases using Prisma and PostgreSQL. Used
+            Swagger and Docker. Collaborated to create responsive admin pages
+            with NuxtJS and TailwindCSS.
+          </p>
+        </div>
+      </section>
 
-    <hr />
+      <!-- Education -->
+      <section>
+        <h2 class="text-xl font-bold mb-3">Education</h2>
+        <div class="">
+          <div class="flex justify-between">
+            <div class="font-semibold">
+              King Mongkut's Institute of Technology Ladkrabang
+            </div>
+            <div class="text-sm text-stone-500">2019 - 2023</div>
+          </div>
+          <span class="text-sm text-stone-500"
+            >Bachelor's Degree in Computer Science</span
+          >
+        </div>
+      </section>
 
-    <p>
-      I'm a developer who loves learning and exploring new tech stacks that
-      align with organizational needs — building efficient and maintainable
-      applications with modern backend and cloud technologies, following best
-      practices used in the industry.
-    </p>
+      <!-- Skills -->
+      <section>
+        <h2 class="text-xl font-bold mb-4">Skills</h2>
+        <div class="flex flex-wrap gap-1">
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=js&theme=light"
+              alt="JavaScript"
+              class="w-5 h-5"
+            />
+            JavaScript
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=nodejs&theme=light"
+              alt="Node.js"
+              class="w-5 h-5"
+            />
+            Node.js
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=nestjs&theme=light"
+              alt="NestJS"
+              class="w-5 h-5"
+            />
+            NestJS
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=postgres&theme=light"
+              alt="PostgreSQL"
+              class="w-5 h-5"
+            />
+            PostgreSQL
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=docker"
+              alt="Docker"
+              class="w-5 h-5"
+            />
+            Docker
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=aws&theme=light"
+              alt="AWS"
+              class="w-5 h-5"
+            />
+            AWS
+          </span>
 
-    <hr />
+          <!-- เพิ่มเติม -->
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=react&theme=light"
+              alt="React"
+              class="w-5 h-5"
+            />
+            React
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=vue&theme=light"
+              alt="Vue"
+              class="w-5 h-5"
+            />
+            Vue
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=tailwind&theme=light"
+              alt="Tailwind CSS"
+              class="w-5 h-5"
+            />
+            Tailwind
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=ts&theme=light"
+              alt="TypeScript"
+              class="w-5 h-5"
+            />
+            TypeScript
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=express&theme=light"
+              alt="Express"
+              class="w-5 h-5"
+            />
+            Express
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=prisma&theme=light"
+              alt="Prisma"
+              class="w-5 h-5"
+            />
+            Prisma
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=mongodb&theme=light"
+              alt="MongoDB"
+              class="w-5 h-5"
+            />
+            MongoDB
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=github"
+              alt="GitHub"
+              class="w-5 h-5"
+            />
+            GitHub
+          </span>
+          <span
+            class="px-3 py-1 border rounded-full text-xs font-semibold flex items-center gap-2"
+          >
+            <img
+              src="https://skillicons.dev/icons?i=git"
+              alt="Git"
+              class="w-5 h-5"
+            />
+            Git
+          </span>
+        </div>
+      </section>
 
-    <h3>📚 Currently Learning</h3>
-    <ul>
-      <li>Messaging systems: Redis, RabbitMQ, Kafka</li>
-      <li>Microservice architecture</li>
-      <li>
-        Cloud platforms and services: AWS, serverless, and container
-        orchestration
-      </li>
-      <li>Frameworks and tools: Next.js, NestJS</li>
-    </ul>
+      <!-- Projects -->
+      <section>
+        <h2 class="text-xl font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            class="rounded-lg bg-card text-card-foreground group relative flex flex-col overflow-hidden border border-border p-4 transition-all duration-300"
+          >
+            <h3 class="font-semibold">Real-Time Chat App</h3>
+            <p class="text-sm text-stone-500 mb-2">Real-time chat app</p>
+            <div class="flex flex-wrap gap-1">
+              <span
+                class="px-3 py-1 border rounded-full text-xs text-gray-800 font-semibold flex items-center gap-2"
+              >
+                React
+              </span>
+              <span
+                class="px-3 py-1 border rounded-full text-xs text-gray-800 font-semibold flex items-center gap-2"
+              >
+                TailwindCSS
+              </span>
+              <span
+                class="px-3 py-1 border rounded-full text-xs text-gray-800 font-semibold flex items-center gap-2"
+              >
+                Express
+              </span>
+              <span
+                class="px-3 py-1 border rounded-full text-xs text-gray-800 font-semibold flex items-center gap-2"
+              >
+                Socket.io
+              </span>
+              <span
+                class="px-3 py-1 border rounded-full text-xs text-gray-800 font-semibold flex items-center gap-2"
+              >
+                MongoDB
+              </span>
+            </div>
 
-    <hr />
-
-    <h3>🧰 Tech Stack</h3>
-    <div class="icon-grid">
-      <a href="https://reactjs.org/"
-        ><img src="https://skillicons.dev/icons?i=react" alt="React"
-      /></a>
-      <a href="https://vuejs.org/"
-        ><img src="https://skillicons.dev/icons?i=vue" alt="Vue"
-      /></a>
-      <a href="https://tailwindcss.com/"
-        ><img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS"
-      /></a>
-      <a href="https://developer.mozilla.org/docs/Web/JavaScript"
-        ><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"
-      /></a>
-      <a href="https://www.typescriptlang.org/"
-        ><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"
-      /></a>
-      <a href="https://expressjs.com/"
-        ><img src="https://skillicons.dev/icons?i=express" alt="Express"
-      /></a>
-      <a href="https://nestjs.com/"
-        ><img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS"
-      /></a>
-      <a href="https://www.prisma.io/"
-        ><img src="https://skillicons.dev/icons?i=prisma" alt="Prisma"
-      /></a>
-      <a href="https://www.postgresql.org/"
-        ><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL"
-      /></a>
-      <a href="https://www.mongodb.com/"
-        ><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB"
-      /></a>
-      <a href="https://github.com/"
-        ><img src="https://skillicons.dev/icons?i=github" alt="GitHub"
-      /></a>
-      <a href="https://git-scm.com/"
-        ><img src="https://skillicons.dev/icons?i=git" alt="Git"
-      /></a>
-      <a href="https://www.docker.com/"
-        ><img src="https://skillicons.dev/icons?i=docker" alt="Docker"
-      /></a>
-      <a href="https://aws.amazon.com/"
-        ><img src="https://skillicons.dev/icons?i=aws" alt="AWS"
-      /></a>
+            <div
+              class="absolute right-2 top-2 rounded-md p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+            >
+              <a
+                href="https://fullstack-chat-app-t3vl.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition hover:bg-muted p-1 rounded text-muted-foreground"
+              >
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+        </div>
+      </section>
     </div>
-
-    <hr />
-
-    <h3 class="center">📈 GitHub Stats</h3>
-    <p class="center">
-      <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=natthawatIs&layout=compact&theme=radical"
-        alt="Top programming languages used by Natthawat"
-      />
-    </p>
   </body>
 </html>
