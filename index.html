@@ -1,101 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Natthawat Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h1, h2, h3 {
-      text-align: center;
-    }
-    p, li {
-      font-size: 1rem;
-    }
-    hr {
-      margin: 2rem 0;
-    }
-    .center {
-      text-align: center;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    .icon-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-    .icon-grid a img {
-      width: 48px;
-      height: 48px;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natthawat Portfolio</title>
+    <style>
+      @font-face {
+        font-family: "Night Zone";
+        src: url("path-to-your-font/NightZone-Regular.ttf") format("truetype"),
+          url("path-to-your-font/NightZone-Italic.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
 
-  <h1>🙋🏼‍♂️ Hi, I'm Natthawat</h1>
-  <p class="center">
-    <i>On a journey to become a Backend/Fullstack Developer, driven by my passion for JavaScript, clean code, and modern web design.</i>
-  </p>
+        background-color: #fff;
+        background-image:
+    /* ไล่จางจากขวาเข้ามา */ radial-gradient(
+            circle at right,
+            rgba(255, 255, 255, 1) 40%,
+            rgba(255, 255, 255, 0) 80%
+          ),
+          /* ไล่จางตรงล่างซ้าย */
+            radial-gradient(
+              circle at bottom left,
+              rgba(255, 255, 255, 0.7) 0%,
+              rgba(255, 255, 255, 0) 60%
+            ),
+          /* ลายตาราง */
+            linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
 
-  <hr>
+        background-size: 100% 100%, 100% 100%, 20px 20px, 20px 20px;
+        background-repeat: no-repeat, no-repeat, repeat, repeat;
+      }
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+      }
+      p,
+      li {
+        font-size: 1rem;
+      }
+      hr {
+        margin: 2rem 0;
+      }
+      .center {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .icon-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .icon-grid a img {
+        width: 48px;
+        height: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Natthawat Isanpayu 🧑🏻‍💻</h1>
+    <p class="center">
+      <i
+        >On a journey to become a Backend/Fullstack Developer, driven by my
+        passion for JavaScript, clean code, and modern web design.</i
+      >
+    </p>
 
-  <ul>
-    <li>📫 Email: <a href="mailto:natthawatisanpayu@gmail.com">natthawatisanpayu@gmail.com</a></li>
-    <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/natthawat-isanpayu-43bb5b2a2/" target="_blank">Natthawat Isanpayu</a></li>
-  </ul>
+    <hr />
 
-  <hr>
+    <ul>
+      <li>
+        📫 Email:
+        <a href="mailto:natthawatisanpayu@gmail.com"
+          >natthawatisanpayu@gmail.com</a
+        >
+      </li>
+      <li>
+        💼 LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/natthawat-isanpayu-43bb5b2a2/"
+          target="_blank"
+          >Natthawat Isanpayu</a
+        >
+      </li>
+    </ul>
 
-  <p>
-    I'm a developer who loves learning and exploring new tech stacks that align with organizational needs — building efficient and maintainable applications with modern backend and cloud technologies, following best practices used in the industry.
-  </p>
+    <hr />
 
-  <hr>
+    <p>
+      I'm a developer who loves learning and exploring new tech stacks that
+      align with organizational needs — building efficient and maintainable
+      applications with modern backend and cloud technologies, following best
+      practices used in the industry.
+    </p>
 
-  <h3>📚 Currently Learning</h3>
-  <ul>
-    <li>Messaging systems: Redis, RabbitMQ, Kafka</li>
-    <li>Microservice architecture</li>
-    <li>Cloud platforms and services: AWS, serverless, and container orchestration</li>
-    <li>Frameworks and tools: Next.js, NestJS</li>
-  </ul>
+    <hr />
 
-  <hr>
+    <h3>📚 Currently Learning</h3>
+    <ul>
+      <li>Messaging systems: Redis, RabbitMQ, Kafka</li>
+      <li>Microservice architecture</li>
+      <li>
+        Cloud platforms and services: AWS, serverless, and container
+        orchestration
+      </li>
+      <li>Frameworks and tools: Next.js, NestJS</li>
+    </ul>
 
-  <h3>🧰 Tech Stack</h3>
-  <div class="icon-grid">
-    <a href="https://reactjs.org/"><img src="https://skillicons.dev/icons?i=react" alt="React" /></a>
-    <a href="https://vuejs.org/"><img src="https://skillicons.dev/icons?i=vue" alt="Vue" /></a>
-    <a href="https://tailwindcss.com/"><img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" /></a>
-    <a href="https://developer.mozilla.org/docs/Web/JavaScript"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript" /></a>
-    <a href="https://www.typescriptlang.org/"><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" /></a>
-    <a href="https://expressjs.com/"><img src="https://skillicons.dev/icons?i=express" alt="Express" /></a>
-    <a href="https://nestjs.com/"><img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" /></a>
-    <a href="https://www.prisma.io/"><img src="https://skillicons.dev/icons?i=prisma" alt="Prisma" /></a>
-    <a href="https://www.postgresql.org/"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" /></a>
-    <a href="https://www.mongodb.com/"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" /></a>
-    <a href="https://github.com/"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" /></a>
-    <a href="https://git-scm.com/"><img src="https://skillicons.dev/icons?i=git" alt="Git" /></a>
-    <a href="https://www.docker.com/"><img src="https://skillicons.dev/icons?i=docker" alt="Docker" /></a>
-    <a href="https://aws.amazon.com/"><img src="https://skillicons.dev/icons?i=aws" alt="AWS" /></a>
-  </div>
+    <hr />
 
-  <hr>
+    <h3>🧰 Tech Stack</h3>
+    <div class="icon-grid">
+      <a href="https://reactjs.org/"
+        ><img src="https://skillicons.dev/icons?i=react" alt="React"
+      /></a>
+      <a href="https://vuejs.org/"
+        ><img src="https://skillicons.dev/icons?i=vue" alt="Vue"
+      /></a>
+      <a href="https://tailwindcss.com/"
+        ><img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS"
+      /></a>
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript"
+        ><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"
+      /></a>
+      <a href="https://www.typescriptlang.org/"
+        ><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"
+      /></a>
+      <a href="https://expressjs.com/"
+        ><img src="https://skillicons.dev/icons?i=express" alt="Express"
+      /></a>
+      <a href="https://nestjs.com/"
+        ><img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS"
+      /></a>
+      <a href="https://www.prisma.io/"
+        ><img src="https://skillicons.dev/icons?i=prisma" alt="Prisma"
+      /></a>
+      <a href="https://www.postgresql.org/"
+        ><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL"
+      /></a>
+      <a href="https://www.mongodb.com/"
+        ><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB"
+      /></a>
+      <a href="https://github.com/"
+        ><img src="https://skillicons.dev/icons?i=github" alt="GitHub"
+      /></a>
+      <a href="https://git-scm.com/"
+        ><img src="https://skillicons.dev/icons?i=git" alt="Git"
+      /></a>
+      <a href="https://www.docker.com/"
+        ><img src="https://skillicons.dev/icons?i=docker" alt="Docker"
+      /></a>
+      <a href="https://aws.amazon.com/"
+        ><img src="https://skillicons.dev/icons?i=aws" alt="AWS"
+      /></a>
+    </div>
 
-  <h3 class="center">📈 GitHub Stats</h3>
-  <p class="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=natthawatIs&layout=compact&theme=radical" alt="Top programming languages used by Natthawat"/>
-  </p>
+    <hr />
 
-</body>
+    <h3 class="center">📈 GitHub Stats</h3>
+    <p class="center">
+      <img
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=natthawatIs&layout=compact&theme=radical"
+        alt="Top programming languages used by Natthawat"
+      />
+    </p>
+  </body>
 </html>
